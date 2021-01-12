@@ -1,10 +1,21 @@
-<testng-results>
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite">
+  <suite name="Surefire suite" duration-ms="15740" started-at="2021-01-12T17:13:51 ICT" finished-at="2021-01-12T17:14:07 ICT">
     <groups>
     </groups>
-    <test name="Surefire test">
-    </test>
-  </suite>
+    <test name="Surefire test" duration-ms="15740" started-at="2021-01-12T17:13:51 ICT" finished-at="2021-01-12T17:14:07 ICT">
+      <class name="suite.registery.RegisteryTest">
+        <test-method status="PASS" signature="registerAccountSuccessfully()" name="registerAccountSuccessfully" duration-ms="8714" started-at="2021-01-12T17:13:51 ICT" finished-at="2021-01-12T17:14:00 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountSuccessfully -->
+        <test-method status="PASS" signature="registerAccountFailedAtTypeWrongPhoneOTP()" name="registerAccountFailedAtTypeWrongPhoneOTP" duration-ms="15696" started-at="2021-01-12T17:13:51 ICT" finished-at="2021-01-12T17:14:07 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountFailedAtTypeWrongPhoneOTP -->
+      </class> <!-- suite.registery.RegisteryTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

@@ -1,1 +1,11 @@
-registery\registeryTest.class
+FW\CoreManagement\DriverManagement.class
+FW\CoreManagement\ActionManagement.class
+FW\Common\CommonFunction.class
+FW\OTPManagement\OTPManagement.class
+FW\PageManagement\PageFactory.class
+FW\PageManagement\registerPhonePage\RegisterPhonePage.class
+suite\registery\RegisteryTest.class
+FW\PageManagement\AbstractPage\AbstractPage.class
+FW\PageManagement\CommonPage\CommonPage.class
+FW\CoreManagement\AssertionManagement.class
+FW\CoreManagement\CoreManagement.class
