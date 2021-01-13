@@ -10,6 +10,10 @@ Please open source file in Intellij
 
 In configuration running, import one runner using JUnit with configure bellow
 
+Test kind: **Class**
+
+Class: **suite.registery.RegisteryTest**
+
 Then, click run
 
 The Test will contains all the steps from login page -> register page -> verification Phone -> personal page -> verification Email -> business detail page.
