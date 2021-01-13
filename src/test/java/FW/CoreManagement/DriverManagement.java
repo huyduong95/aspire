@@ -25,10 +25,15 @@ public class DriverManagement {
     // Function
     public void initializeBrowser() {
         String testingBrowser = getDataFromConfig("BROWSER");
+        String testingOS = getDataFromConfig("OS");
         String currentDir = System.getProperty("user.dir");
         WebDriver newDriver = null;
         if (testingBrowser.equalsIgnoreCase("Chrome")) {
-            System.setProperty("webdriver.chrome.driver", currentDir + "/src/test/resources/webDriver/chromedriver.exe");
+            if(testingOS.equalsIgnoreCase("Windows")) {
+                System.setProperty("webdriver.chrome.driver", currentDir + "/src/test/resources/webDriver/Chrome/chromedriverWin.exe");
+            } else if(testingOS.equalsIgnoreCase("Mac OS")) {
+                System.setProperty("webdriver.chrome.driver", currentDir + "/src/test/resources/webDriver/Chrome/chromedriverMac");
+            }
             ChromeOptions options = new ChromeOptions();
             options.addArguments("start-maximized");
             newDriver = new ChromeDriver(options);
