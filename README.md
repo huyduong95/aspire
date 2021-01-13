@@ -7,7 +7,7 @@
 4. Install Chrome Browser version 87
 
 ## How it work
-Please open source file in Intellij
+Please open source file in Intellij, and let Intellij resolving + install required dependencies
 
 In configuration running, import one runner using JUnit with configure bellow
 
@@ -35,6 +35,13 @@ src.test.java:
 
 config.properties
 
+You can change the testing environment in config.properties
+- BROWSER: for right now in Framework, it only run Chrome, for the further future, it should be run by Firefox and IE (or Safari)
+- OS: You can change it between "Windows" and "Mac OS"
+- BASE_URL: the main testing domain of this framework
+- OTP_CODE: it temporary stored here until the framework can get OTP Code dynamically
+
+For e.g:
 - BROWSER = Chrome
 - OS = Windows
 - BASE_URL = https://feature-qa.customer-frontend.staging.aspireapp.com/sg
