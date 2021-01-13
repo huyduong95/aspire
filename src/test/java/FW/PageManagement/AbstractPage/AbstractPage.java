@@ -10,7 +10,7 @@ public class AbstractPage {
     protected Logger logger;
 
     public AbstractPage() {
-        logger = Logger.getLogger(this.getClass().getSimpleName());
+        this.logger = Logger.getLogger(this.getClass().getName());
         BasicConfigurator.configure();
     }
 

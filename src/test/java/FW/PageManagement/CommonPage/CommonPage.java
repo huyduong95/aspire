@@ -13,6 +13,7 @@ import static FW.PageManagement.PageFactory.*;
 public class CommonPage extends AbstractPage {
 
     private String loadingPageXpath = "//div[contains(@class,'q-inner-loading') and @showing='true']";
+    private String alertWarning = "//div[@role='alert']//img[contains(@src,'error')]";
 
 
     public CommonPage() {
@@ -23,6 +24,11 @@ public class CommonPage extends AbstractPage {
         getActionBrowser().navigateToPage(pageUrl);
         getLoginPage().waitForPageLoadCompleted();
         logger.info("==================== Test ====================");
+    }
+
+    public boolean isAlertWarningDisplayed() {
+        Boolean isAlertWarningDisplayed = getActionBrowser().waitUntilElementDisplayed(alertWarning, 20);
+        return isAlertWarningDisplayed;
     }
 
     public void waitForLoadingPageDisappeared() {

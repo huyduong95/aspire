@@ -3,6 +3,8 @@ package FW.PageManagement.RegisterPage;
 import FW.PageManagement.AbstractPage.AbstractPage;
 
 import static FW.CoreManagement.CoreManagement.getActionBrowser;
+import static FW.PageManagement.PageFactory.getCommonPage;
+import static FW.PageManagement.PageFactory.getRegisterPage;
 
 public class RegisterPage extends AbstractPage {
 

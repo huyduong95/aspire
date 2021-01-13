@@ -32,16 +32,20 @@ public class CommonFunction {
         return propertyValue;
     }
 
-    public static String randomPhoneNumber() {
+    public static String getRandomPhoneNumber() {
         Random rand = new Random();
-        int num1 = (rand.nextInt(7) + 1) * 100 + (rand.nextInt(8) * 10) + rand.nextInt(8);
-        int num2 = rand.nextInt(999);
-        int num3 = rand.nextInt(99999);
-
-        DecimalFormat df3 = new DecimalFormat("000"); // 3 zeros
-        DecimalFormat df4 = new DecimalFormat("0000"); // 4 zeros
-
-        String phoneNumber = df3.format(num1) + df3.format(num2) + df4.format(num3);
+        int num = rand.nextInt(999999999);
+        DecimalFormat df = new DecimalFormat("000000000"); // 4 zeros
+        String phoneNumber = df.format(num);
         return phoneNumber;
+    }
+
+    public static String getRandomUEN() {
+        Random rand = new Random();
+        char lastChar = (char)(rand.nextInt(26) + 'A');
+        int num = rand.nextInt(99999999);
+        DecimalFormat df = new DecimalFormat("00000000");
+        String randomUEN = df.format(num) + lastChar;
+        return  randomUEN;
     }
 }
