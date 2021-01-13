@@ -34,10 +34,11 @@ src.test.java:
     - RegisteryTest: contains all test Case
 
 config.properties
-BROWSER = Chrome
-OS = Windows
-BASE_URL = https://feature-qa.customer-frontend.staging.aspireapp.com/sg
-OTP_CODE = 1234
+
+- BROWSER = Chrome
+- OS = Windows
+- BASE_URL = https://feature-qa.customer-frontend.staging.aspireapp.com/sg
+- OTP_CODE = 1234
 
 ## Test Case
 
